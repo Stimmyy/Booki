@@ -1,0 +1,893 @@
+@font-face
+{
+    font-family: 'RALEWAY';
+    src: url("/Polices/Raleway-VariableFont_wght.ttf")
+}
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body
+{
+    max-width: 1440px;
+    margin:auto;
+    font-family: 'Raleway','serif';
+}
+
+img {
+    display: block;
+}
+
+
+footer .list ul 
+{
+    list-style: none;
+    padding: 0;
+}
+
+button:hover,button:focus
+{
+    outline:#DEEBFF solid 2px;
+}
+
+
+                                    /* HEADER */
+
+.header1
+{
+    display:flex;
+    justify-content: space-between;
+    padding: 25px;
+
+}
+
+.header1 img.logo
+{
+    height: 50px;
+}
+
+.header1 img.logo2
+{
+    height: 50px;
+    display:none;
+}
+
+.header1 a
+{
+    text-decoration: none;
+    font-size:20px;
+}
+
+
+.header1 #menu ul
+{
+    display:flex;
+    list-style-type: none;
+    margin:0 auto;
+}
+
+.header1 #menu ul li
+{
+   margin:0px 20px 0px 20px;
+}
+
+main header.slogan
+{
+    padding: 0 25px;
+}
+
+main header.slogan .slogan--title
+{
+    font-size:28px;
+    margin-bottom:-1%;
+}
+
+.header1 nav#menu ul li
+{
+    border-top: 1px solid transparent;
+    padding-top:5%;
+    margin: 0px 20px 0px 20px;
+}
+
+.header1 nav#menu ul li:hover
+{
+    border-color: #0065FC;
+}
+
+.header1 nav#menu li:hover a
+{
+    color:#0065FC;
+}
+
+.header1 nav#menu ul li a
+{
+    color:black;
+}
+
+
+
+                                                                    /* Barre de recherche */
+
+main #search 
+{
+    padding: 0 25px;
+}
+
+#searchbar
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    height: 50px;
+}
+
+
+#searchbar label
+{
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+    font-size:110%;
+    width:50px;
+
+} 
+
+#searchbar input
+{
+    flex: 0 1 40ch;
+    padding: 10px;
+    border: solid #F2F2F2;
+    border-width: 1px 0;
+    min-width: 0;
+}
+
+    
+#searchbar .search--button
+{
+    flex: 0 0 auto;
+    min-width: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    background-color: #0065fc;
+    color:white;
+    text-align: center;
+}
+    
+#searchbar .search--button:hover
+{
+    cursor:pointer;
+    outline-style:none;
+}
+
+#searchbar .search--button .button--icon
+{
+    display:none;
+}
+
+
+/* FILTRES */
+
+.section--filters
+{
+    margin-top:20px;
+    margin-bottom:20px;
+    display:flex;
+    flex-flow:row wrap;
+    align-items:center;
+    gap:10px;
+}
+.section--filters h3
+{
+    margin:0;
+    padding:0;
+}
+                                                                        
+.section--filters .filters--container
+{
+    display:flex;
+    flex-flow: row wrap;
+    gap:10px;
+    margin:0;
+    padding:0;
+}
+                                                                        
+.section--filters .filters--container .filters--item
+{
+    list-style: none;
+}
+                                                                        
+.section--filters .filters--container .filters--item button
+{
+    display:flex;
+    flex-flow: row wrap;
+    gap:5px;
+    padding:0;
+    padding-right: 10px;
+    text-align: center;
+    border:1px solid rgb(217,217,217) ;
+    border-radius:35px;
+    background: none;
+    cursor:pointer;
+}
+                                                                        
+                                                                        
+.filter--icon
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background: #DEEBFF;
+    color:#0065FC;
+    margin:-4px;
+    margin-top:-3px;
+}
+                                                                        
+.section--filters .filters--container .filters--item button .filter--text
+{
+    display:flex;
+    margin:13px;
+}
+
+
+
+.information
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.information i
+{
+    flex: 0 0 auto;
+    align-self: start;
+    position: relative;
+    top: 10px;
+    color: #0065fc;
+    border: 1px solid grey;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;  
+    margin-bottom:5px;
+}
+
+
+
+
+/* Hosting */
+                                          
+main #Hosting 
+{
+    margin:0 auto;
+    padding: 0 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap:32px;
+}
+                                        
+                                        
+main #Hosting a
+{
+    text-decoration: none;
+    color:black;
+}
+                                        
+main #Hosting .Hosting--main
+{
+    padding:20px;
+    flex:1 1 66%;
+    border-radius:10px;
+    background:#F2F2F2; 
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;  
+}
+                                        
+                                        
+main #Hosting .Hosting--main .cards--container
+{
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+                                        
+                                                                                
+main #Hosting .Hosting--main .cards--container article
+{
+    flex:1 1 auto;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.1);
+}
+                                        
+main #Hosting .Hosting--main .cards--container a 
+{
+    flex:1 0 26%;
+    display:flex;
+}
+                                        
+main #Hosting .Hosting--main .cards--container .card
+{
+    padding: 5px;
+    background: white;
+    border-radius: 10px;
+    display:flex;
+    flex-flow: column nowrap;
+}
+                                        
+main #Hosting .Hosting--main .cards--container .card .card--thumbnail
+{
+    flex: 0 0 auto;
+    height: 100px;
+    width:100%;
+    border-radius:10px 10px 0px 0;
+    object-fit: cover;
+}
+                                        
+main #Hosting .Hosting--main .cards--container .card .card--title
+{
+    margin:0 auto;
+}
+                                        
+main #Hosting .Hosting--main .cards--container .card .card--content
+{
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    margin:10px;
+}
+                                                
+main #Hosting .Hosting--main .cards--container .card .card--description span
+{
+    font-weight: bold;
+}
+                                        
+main #Hosting .Hosting--main .cards--container .card .card--content .card--title 
+{
+    margin: 0;
+    font-size: 16px; 
+}
+                                        
+main #Hosting .Hosting--main .cards--container .card .card--content .card--description 
+{
+    flex: 1 0 auto;
+    margin: 0;
+    font-size: 14px; 
+}
+                                        
+main #Hosting .Hosting--main .cards--container .card .card--content .card--ranking
+{
+    margin :0;
+    margin-top:15px;
+    font-size: 12px; 
+}
+    
+
+
+main #Hosting .Hosting--aside 
+{
+    flex: 0 4 33%;
+    padding: 20px;
+    border-radius: 10px;
+    background: #F2F2F2;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 25px;
+}
+                                            
+main #Hosting .Hosting--aside header 
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main #Hosting .Hosting--aside header h2
+{
+    margin: 0;
+}
+
+                                                                                                   
+main #Hosting .Hosting--aside .cards--container 
+{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px; 
+}
+
+main #Hosting .Hosting--aside .cards--container .card 
+{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 5px;
+    background: white;
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.1);
+}
+
+main #Hosting .Hosting--aside .cards--container .card .card--thumbnail 
+{
+    flex: 0 0 auto;
+    height:120px;
+    width: 120px;
+    border-radius: 7px 0 0 7px;
+    object-fit: cover; 
+}
+                                        
+main #Hosting .Hosting--aside .cards--container .card .card--content 
+{
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 10px; 
+}
+
+main #Hosting .Hosting--aside .cards--container .card .card--content .card--title 
+{
+    margin: 0;
+    font-size: 16px; 
+}
+                                        
+main #Hosting .Hosting--aside .cards--container .card .card--content .card--description 
+{
+    flex: 1 0 auto;
+    margin: 0;
+    font-size: 14px; 
+}
+
+main #Hosting .Hosting--aside .cards--container .card .card--content .card--ranking
+{
+    margin: 0;
+    font-size: 12px; 
+}
+
+main #Hosting .Hosting--main header h2,
+main #Hosting .Hosting--main footer h2 {
+    margin: 0;
+}
+
+main #Hosting .Hosting--main footer .Viewmore:hover
+{
+    color:#0065FC;
+}
+
+main #Hosting .Hosting--main .cards--container a:hover,
+main #Hosting .Hosting--aside .cards--container a:hover
+{
+    position: relative;
+    bottom: 5px;
+}
+
+main #Hosting .Hosting--main .cards--container a article.card .card--content .card--ranking
+{
+    color:#0065fc
+}
+
+main #Hosting .Hosting--aside .cards--container a article.card .card--content .card--ranking
+{
+    color:#0065fc
+}
+
+main #Hosting .Hosting--main .cards--container a article.card .card--content .card--ranking .fa-starempty
+{
+    color: rgb(217,217,217);
+}
+
+main #Hosting .Hosting--aside .cards--container a article.card .card--content .card--ranking .fa-starempty
+{
+    color:rgb(217,217,217);
+}
+
+
+main #Hosting a:focus
+{
+    border:none;
+}
+                            
+
+main #Hosting a:focus
+{
+    border:none;
+}
+
+main #Hosting footer .Viewmore
+{
+    font-size:20px;
+    font-weight:bold;
+}
+
+main #Hosting .euro
+{
+    margin-left:0.5px;
+    font-weight:bold;
+}
+
+/* Activities */
+
+#Activities
+{
+    display:flex;
+    flex-flow:column nowrap;
+    gap: 25px;
+    margin-top: 40px;
+    padding: 0 25px;
+}
+
+#Activities a
+{
+    text-decoration: none;
+    color:black;
+}
+
+#Activities header h2
+{
+    margin:0 auto;
+}
+
+#Activities .Cards--container
+{
+    display:flex;
+    flex-flow: row nowrap;
+    gap: 25px;
+    height: 500px;
+}
+
+#Activities .Cards--container .Cards--column 
+{
+    flex: 1 1 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 25px;
+}
+
+#Activities .Cards--container .Cards--column a 
+{
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#Activities .Cards--container .Cards--column a:hover
+{
+    position:relative;
+    bottom:5px;
+}
+
+#Activities .Cards--container .Cards--column:nth-child(2) a:nth-child(1) {
+    flex-shrink: 2;
+}
+
+#Activities .Cards--container .Cards--column:nth-child(2) a:nth-child(2) {
+    flex-shrink: 3;
+}
+
+#Activities .Cards--container .Cards--column .card {
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#Activities .Cards--container .Cards--column .card .card--thumbnail {
+    flex: 1 1 auto;
+    height: 0px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#Activities .Cards--container .Cards--column .card .card--content {
+    flex: 0 0 auto;
+}
+
+#Activities .Cards--container .Cards--column .card .card--title
+{
+    margin:0 auto;
+    padding:15px;
+}
+
+                    /* FOOTER */
+
+body > footer
+{
+    margin-top:60px;
+    padding: 25px;
+    display:flex;
+    flex-flow: row nowrap;
+    background: #F2F2F2;
+    gap: 25px;
+}
+
+body > footer a
+{
+    text-decoration: none;
+    color:black;
+}
+
+body > footer a:hover
+{
+    color:#0065FC;
+}
+
+
+body > footer .list
+{
+    flex: 1 1 33%;
+    margin-left:10px;
+}
+
+body > footer h3 {
+    margin-top: 0;
+}
+
+body > footer ul {
+    margin-bottom: 0;
+}
+
+body > footer .list ul
+{
+    display:flex;
+    flex-flow: column nowrap;
+    gap:10px;
+}
+
+
+                    /*MEDIA QUERIES */
+
+@media screen and (max-width:768px) /* MEDIA QUERY POUR MOBILE (48REM = 768px) */
+{
+    .header1
+    {
+        display:flex;
+        flex-flow:column nowrap;
+        padding: 0;
+    }
+
+    .header1 .booki
+    {
+        align-self: center;
+        padding: 25px;
+    }
+
+    .header1 .booki img.logo
+    {
+        display:none;
+    }
+
+    .header1 .booki img.logo2
+    {
+        display:block;
+    }
+
+
+    .header1 nav ul
+    {
+        margin:0px -20px;
+        padding:0;
+    }
+
+
+    .header1 nav#menu ul li 
+    {
+        width: 50%;
+        padding: 20px;
+        text-align: center;
+        margin: 0px;
+        border-top: none;
+        border-bottom: 2px solid grey;
+    }
+
+    .header1 nav#menu ul li:hover
+    {
+        border-bottom-color:#0065FC;
+    }
+       
+    #searchbar input {
+        flex: 1 1 auto;
+    }
+    
+    #searchbar .search--button .button--text
+    {
+        display: none;
+    }
+
+    #searchbar .search--button .button--icon
+    {
+        display: block;
+    }
+
+    .filters
+    {
+        width:100%;
+    }
+
+    main #Hosting
+    {
+        flex:1 1 auto;
+        flex-flow: column nowrap;
+        align-items: stretch;
+        padding: 0;
+    }
+    
+    main #Hosting .Hosting--aside
+    {
+        order:-1;
+        width:auto;
+        margin:0%;
+        border-radius: 0;
+    }
+ 
+    main #Hosting .Hosting--main
+    {
+        padding: 0;
+        background:none;
+        width:auto;
+        margin:0%;
+        padding: 0 25px;
+    }
+
+    main #Hosting .Hosting--main footer
+    {
+        background:none;
+    }
+    
+    main #Hosting .Hosting--main .cards--container 
+    {
+        flex-flow : column nowrap;
+    }
+    
+    main #Hosting .Hosting--main .cards--container article
+    {
+        margin-left:-1%;
+    }
+    
+    main #Hosting .Hosting--main .cards--container .card
+    {
+        width:100%;
+        max-width: 100%;
+    }
+
+    main #Hosting .Hosting--main .cards--container .card .card--thumbnail
+    {
+        object-fit: cover;
+        width:100%!important;
+        height: calc(30vw);
+    }
+
+    #Activities .Cards--container
+    {
+        display:flex;
+        flex-flow:column nowrap;
+        height: unset;
+    }
+
+
+    #Activities .Cards--container .Cards--column .card .card--thumbnail
+    {
+        height: 40vw;
+    }
+
+    body > footer
+    {
+        display:flex;
+        flex-flow:column nowrap;
+    }
+
+}               
+                            /* FIN MEDIA QUERY MOBILE */
+
+
+@media screen and (min-width:768.1px)and (max-width:992px) /* MEDIA QUERY POUR LES TABLETTES 62REM = 992px */
+{
+     
+
+    .header1 img.logo 
+    {
+    display:none;
+    }
+
+    .header1 img.logo2
+    {
+    display:inline-block;
+    }
+
+    .header1 nav#menu
+    {
+    margin-right:10%;
+    }
+
+    .header1 nav ul li a:hover
+    {
+    border-bottom:hidden;
+    }
+
+    #searchbar input 
+    {
+    flex: 1 1 auto;
+    }
+    
+    #searchbar .search--button .button--text
+    {
+    display: none;
+    }
+
+    #searchbar .search--button .button--icon
+    {
+    display: block;
+    }
+ 
+    main #Hosting
+    {
+        flex:1 1 auto;
+        flex-flow: column nowrap;
+        align-items: stretch;
+        min-width:500px;
+        padding: 0;
+    }
+    
+    main #Hosting .Hosting--aside
+    {
+        order:-1;
+        border-radius: 0;
+    }
+    
+    main #Hosting .Hosting--main
+    {
+        background:none;
+        padding: 0 25px;
+        width:auto;
+    }
+    
+    main #Hosting .Hosting--main header h2
+    {
+        text-align: center;
+    }
+    
+    main #Hosting .Hosting--main .cards--container article
+    {
+        margin-left:-1%;
+    }
+    
+    main #Hosting .Hosting--main .cards--container .card
+    {
+        width:100%!important;
+    }
+
+    main #Hosting .Hosting--main .cards--container .card .card--thumbnail
+    {
+        object-fit: cover;
+        width:100%!important;
+    }
+
+    #Activities .Cards--container
+    {
+        flex-wrap: wrap;
+        height: 800px;
+    }
+
+    #Activities .Cards--container .Cards--column
+    {
+        flex-basis: 40%;
+    }
+
+
+}                                /* FIN MEDIA QUERY TABLETTE*/
